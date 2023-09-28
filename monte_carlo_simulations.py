@@ -13,7 +13,18 @@ time = np.arange(0, 1, dt)
 kappa = 0.5
 theta = 0.04
 sigma = 0.01
-
+# Cox-Ingersoll-Ross (CIR) Model Parameters (using similar parameters with adjustments)
+kappa_cir = 0.5
+theta_cir = 0.04
+sigma_cir = 0.02
+#BDT Parameters 
+kappa_bdt = 0.5
+theta_bdt = 0.04
+sigma_bdt = 0.01
+# Hull-White Model Parameters (using similar parameters to Vasicek for simplicity)
+kappa_hw = 0.5
+theta_hw = 0.04
+sigma_hw = 0.01
 # Adjusting the simulation setup for 1 year with monthly intervals
 num_steps = 12
 dt = 1/12  # monthly steps
