@@ -25,10 +25,7 @@ sigma_bdt = 0.01
 kappa_hw = 0.5
 theta_hw = 0.04
 sigma_hw = 0.01
-# Adjusting the simulation setup for 1 year with monthly intervals
-num_steps = 12
-dt = 1/12  # monthly steps
-time = np.arange(0, 1, dt)
+
 
 # Vasicek Model Simulation
 rates_vasicek_1yr = np.zeros((num_paths, num_steps))
